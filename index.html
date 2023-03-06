@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230306171218">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<header data-scroll="120" data-scroll-show class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__body-menu">
+						<nav class="header__nav menu">
+							<ul class="menu__list">
+								<li class="menu__list-item"><a data-goto=".main" href="#">HOME</a></li>
+								<li class="menu__list-item"><a data-goto-top="80" data-goto=".price" href="#">SERVICES</a></li>
+								<li class="menu__list-item"><a data-goto-top="80" data-goto=".gallery" href="#">GALLERY</a></li>
+								<li class="menu__list-item"><a data-goto-top="80" data-goto=".appointment" href="#">CONTACT</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__body-logo">
+						<a href="#" class="header__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo"></picture></a>
+					</div>
+					<div data-da=".header__nav,767.98,1" class="header__body-social">
+						<div class="social">
+							<a href="#" class="social-link _icon-instagram"></a>
+							<a href="#" class="social-link _icon-facebook"></a>
+							<a href="#" class="social-link _icon-twitter"></a>
+						</div>
+						<button data-popup="#popup-form" type="button" class="booking-btn btn">Book now</button>
+					</div>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<div id="video" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<!-- <button data-close type="button" class="popup__close">Закрити</button> -->
+					<div data-youtube-place class="popup__text">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="popup-form" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close"></button>
+					<div class="popup__text">
+						<h2 class="popup-title title"> request a <span class="color-span">callback</span></h2>
+						<h3 class="popup-title__sub">We can call you in 30 seconds, just enter your number</h3>
+						<form action="" method="POST">
+							<input type="text" name="form[name]" data-error="Error" placeholder="Name" class="input">
+							<input type="text" name="form[phone]" data-error="Error" placeholder="Phone" class="input">
+							<button type="button" class="button btn">Send</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<main class="page">
+			<section class="main">
+				<div class="main__container">
+					<div class="main__body">
+						<h2 class="main__prev-title">WE KNOW YOUR STYLE</h2>
+						<h1 class="main__title title">BEING A BARBER IS <br><span>ABOUT TAKING CARE OF THE
+								PEOPLE</span></h1>
+						<button data-popup="#popup-form" type="button" class="main__btn">BOOK NOW</button>
+					</div>
+				</div>
+			</section>
+			<section class="about-us">
+				<div class="about-us__container">
+					<div class="about-us__body about">
+						<div data-watch data-watch-threshold="0.7" data-watch-once class="about__image-ibg">
+							<picture><source srcset="img/about-us.webp" type="image/webp"><img src="img/about-us.jpeg" alt="img"></picture>
+						</div>
+						<div class="about__content">
+							<h2 class="about__content-title title right">
+								ABOUT US AND <span class="color-span">SERVICES</span></h2>
+							<div class="about__content-text">
+								Welcome to Our Barbershop, a modern spin on the traditional Italian barbershop. We provide a
+								special environment designed to embrace a man’s masculinity, minus all the macho.
+							</div>
+							<button data-goto-top="80" data-goto=".presentation" type="button" class="about__content-btn btn">LEARN
+								MORE</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="price">
+				<div class="price__container">
+					<div class="price__body ">
+						<div class="price__body-card price-card">
+							<picture><source srcset="img/services/face.webp" type="image/webp"><img class="price-card__img" src="img/services/face.png" alt="icon"></picture>
+							<h2 class="price-card__title title">FACE SHAVE</h2>
+							<div class="price-card__text">
+								This service entails a calming pre-shave oil and hot towel service to prepare the face for the
+								traditional straight razor shave. <br>
+								Face Shave for <span>only $9</span>
+							</div>
+						</div>
+						<div class="price__body-card price-card">
+							<picture><source srcset="img/services/trimer.webp" type="image/webp"><img class="price-card__img" src="img/services/trimer.png" alt="icon"></picture>
+							<h2 class="price-card__title title">BREADTRIM</h2>
+							<div class="price-card__text">
+								We’ll define your beard and its future growth pattern. You’ll get an even length all over, and a
+								proper beard neckline, cheek line.<br>
+								BreadTrim for <span>only $15</span>
+							</div>
+						</div>
+						<div class="price__body-card price-card">
+							<picture><source srcset="img/services/trim.webp" type="image/webp"><img class="price-card__img" src="img/services/trim.png" alt="icon"></picture>
+							<h2 class="price-card__title title">MOUSTACHE TRIM</h2>
+							<div class="price-card__text">
+								Using scissors, a beard trimmer, we’ll carefully trim the mustache to the desired length and
+								check for evenness.<br>
+
+								Mousetache Trim for <span>only $25</span>
+							</div>
+						</div>
+						<div class="price__body-card price-card">
+							<picture><source srcset="img/services/cut.webp" type="image/webp"><img class="price-card__img" src="img/services/cut.png" alt="icon"></picture>
+							<h2 class="price-card__title title">HAIRCUT</h2>
+							<div class="price-card__text">
+								A tailored haircut entails any variation of lengths on the sides and back of the head with a
+								custom taper at the nape of the neck.<br>
+								Haircut for <span>only $35</span>
+							</div>
+						</div>
+						<div class="price__body-card price-card">
+							<picture><source srcset="img/services/brush.webp" type="image/webp"><img class="price-card__img" src="img/services/brush.png" alt="icon"></picture>
+							<h2 class="price-card__title title">CLIPPER CUT</h2>
+							<div class="price-card__text">
+								Detailed clipper work in the back and sides is combined with a clipper-over-comb technique for
+								short layers on top.<br>
+
+								Clipper Cut for <span>only $10</span>
+							</div>
+						</div>
+						<div class="price__body-card price-card">
+							<picture><source srcset="img/services/masage.webp" type="image/webp"><img class="price-card__img" src="img/services/masage.png" alt="icon"></picture>
+							<h2 class="price-card__title title">FACIAL MASSAGE</h2>
+							<div class="price-card__text">
+								With the application of spa cream and gentle pressure on the forehead, eyes, ears, and jaw-line,
+								you’ll get full relaxation.<br>
+
+								Facial Massage for <span>only $15</span>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="gallery">
+				<div class="gallery__container">
+					<div data-gallery class="gallery__body">
+						<a class="gallery__body-link" href="img/galery/01.jpeg">
+							<picture><source srcset="img/galery/01.webp" type="image/webp"><img src="img/galery/01.jpeg" alt=""></picture>
+							<div class="gallery__hover">
+								<span class="gallery__hover-line1"></span>
+								<span class="gallery__hover-line2"></span>
+							</div>
+						</a>
+						<a class="gallery__body-link" href="img/galery/02.jpeg">
+							<picture><source srcset="img/galery/02.webp" type="image/webp"><img src="img/galery/02.jpeg" alt=""></picture>
+							<div class="gallery__hover">
+								<span class="gallery__hover-line1"></span>
+								<span class="gallery__hover-line2"></span>
+							</div>
+						</a>
+						<a class="gallery__body-link" href="img/galery/03.jpeg">
+							<picture><source srcset="img/galery/03.webp" type="image/webp"><img src="img/galery/03.jpeg" alt=""></picture>
+							<div class="gallery__hover">
+								<span class="gallery__hover-line1"></span>
+								<span class="gallery__hover-line2"></span>
+							</div>
+						</a>
+						<a class="gallery__body-link" href="img/galery/04.jpeg">
+							<picture><source srcset="img/galery/04.webp" type="image/webp"><img src="img/galery/04.jpeg" alt=""></picture>
+							<div class="gallery__hover">
+								<span class="gallery__hover-line1"></span>
+								<span class="gallery__hover-line2"></span>
+							</div>
+						</a>
+						<a class="gallery__body-link" href="img/galery/05.jpeg">
+							<picture><source srcset="img/galery/05.webp" type="image/webp"><img src="img/galery/05.jpeg" alt=""></picture>
+							<div class="gallery__hover">
+								<span class="gallery__hover-line1"></span>
+								<span class="gallery__hover-line2"></span>
+							</div>
+						</a>
+						<a class="gallery__body-link" href="img/galery/06.jpeg">
+							<picture><source srcset="img/galery/06.webp" type="image/webp"><img src="img/galery/06.jpeg" alt=""></picture>
+							<div class="gallery__hover">
+								<span class="gallery__hover-line1"></span>
+								<span class="gallery__hover-line2"></span>
+							</div>
+						</a>
+						<a class="gallery__body-link" href="img/galery/07.jpeg">
+							<picture><source srcset="img/galery/07.webp" type="image/webp"><img src="img/galery/07.jpeg" alt=""></picture>
+							<div class="gallery__hover">
+								<span class="gallery__hover-line1"></span>
+								<span class="gallery__hover-line2"></span>
+							</div>
+						</a>
+						<a class="gallery__body-link" href="img/galery/08.jpeg">
+							<picture><source srcset="img/galery/08.webp" type="image/webp"><img src="img/galery/08.jpeg" alt=""></picture>
+							<div class="gallery__hover">
+								<span class="gallery__hover-line1"></span>
+								<span class="gallery__hover-line2"></span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="our-team">
+				<div class="our-team__container">
+					<div class="our-team__body">
+						<h2 class="our-team__body-title title">OUR BEST <span class="color-span">TEAM</span> </h2>
+						<div class="our-team__body-text">
+							We are a team of true professionals who are not only A master at their craft but also specialists
+							truly passionate about hair and male grooming.
+						</div>
+						<div data-tabs class="our-team__tabs team-tabs">
+							<nav data-tabs-titles class="team-tabs__navigation">
+								<button type="button" class="team-tabs__title _tab-active"></button>
+								<button type="button" class="team-tabs__title"></button>
+								<button type="button" class="team-tabs__title"></button>
+								<button type="button" class="team-tabs__title"></button>
+							</nav>
+							<div data-tabs-body class="team-tabs__content">
+								<div class="team-tabs__content-body team-tab">
+									<div class="team-tab__wrapper">
+										<div class="team-tab__foto">
+											<picture><source srcset="img/team/foto01.webp" type="image/webp"><img src="img/team/foto01.jpeg" alt="foto"></picture>
+										</div>
+										<div class="team-tab__content">
+											<h2 class="team-tab__content-name title">TOMAS BLACK</h2>
+											<div class="team-tab__content-text">Tomas is one of our superstar professionals who has
+												been a barber and stylist for over 20 years.</div>
+											<button data-goto-top="80" data-goto=".appointment" class="team-tab__content-button btn">SHEDULE</button>
+										</div>
+										<div class="team-tab__content-social">
+											<a href="#" class="team-tab__content-social-link _icon-facebook"></a>
+											<a href="#" class="team-tab__content-social-link _icon-twitter"></a>
+											<a href="#" class="team-tab__content-social-link _icon-instagram"></a>
+										</div>
+									</div>
+
+								</div>
+								<div class="team-tabs__content-body team-tab">
+									<div class="team-tab__wrapper">
+										<div class="team-tab__foto">
+											<picture><source srcset="img/team/foto02.webp" type="image/webp"><img src="img/team/foto02.jpeg" alt="foto"></picture>
+										</div>
+										<div class="team-tab__content">
+											<h2 class="team-tab__content-name title">DAVID BRAVO</h2>
+											<div class="team-tab__content-text">David is highly experienced with all aspects of
+												cutting hair and wet shaving.</div>
+											<button data-goto-top="80" data-goto=".appointment" class="team-tab__content-button btn">SHEDULE</button>
+										</div>
+										<div class="team-tab__content-social">
+											<a href="#" class="team-tab__content-social-link _icon-facebook"></a>
+											<a href="#" class="team-tab__content-social-link _icon-twitter"></a>
+											<a href="#" class="team-tab__content-social-link _icon-instagram"></a>
+										</div>
+									</div>
+
+								</div>
+								<div class="team-tabs__content-body team-tab">
+									<div class="team-tab__wrapper">
+										<div class="team-tab__foto">
+											<picture><source srcset="img/team/foto03.webp" type="image/webp"><img src="img/team/foto03.jpeg" alt="foto"></picture>
+										</div>
+										<div class="team-tab__content">
+											<h2 class="team-tab__content-name title">JOSÉ CAPRIO</h2>
+											<div class="team-tab__content-text">Jose is one of our superstar professionals who has
+												been a barber and stylist for over 10 years.</div>
+											<button data-goto-top="80" data-goto=".appointment" class="team-tab__content-button btn">SHEDULE</button>
+										</div>
+										<div class="team-tab__content-social">
+											<a href="#" class="team-tab__content-social-link _icon-facebook"></a>
+											<a href="#" class="team-tab__content-social-link _icon-twitter"></a>
+											<a href="#" class="team-tab__content-social-link _icon-instagram"></a>
+										</div>
+									</div>
+
+								</div>
+								<div class="team-tabs__content-body team-tab">
+									<div class="team-tab__wrapper">
+										<div class="team-tab__foto">
+											<picture><source srcset="img/team/foto04.webp" type="image/webp"><img src="img/team/foto04.jpeg" alt="foto"></picture>
+										</div>
+										<div class="team-tab__content">
+											<h2 class="team-tab__content-name title">JOHN SMITH</h2>
+											<div class="team-tab__content-text">Jonh is highly experienced with all aspects of
+												cutting hair and wet shaving.</div>
+											<button data-goto-top="80" data-goto=".appointment" class="team-tab__content-button btn">SHEDULE</button>
+										</div>
+										<div class="team-tab__content-social">
+											<a href="#" class="team-tab__content-social-link _icon-facebook"></a>
+											<a href="#" class="team-tab__content-social-link _icon-twitter"></a>
+											<a href="#" class="team-tab__content-social-link _icon-instagram"></a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="presentation">
+				<div class="presentation__container">
+					<div class="presentation__body">
+						<a href="#" data-popup="#video" data-popup-youtube="QRr6DpCkxSY" class="presentation__link"></a>
+						<h2 class="presentation__title title">OUR <span class="color-span">VIDEO <br> PRESENTATION</span></h2>
+					</div>
+				</div>
+			</section>
+			<section class="appointment">
+				<div class="appointment__container">
+					<div class="appointment__body">
+						<div class="appointment__content ">
+							<h2 class="appointment__content-title title">GET A SINGLE BLADE DISCOUNT, <span class="color-span">15% OFF</span> FOR WEB RESERVATIONS & PAYMENT
+							</h2>
+							<div class="appointment__content-sub-title">
+								Book a Haircut and Shave
+							</div>
+						</div>
+						<div class="appointment__form">
+							<form id="step1" action="" method="POST">
+								<div class="appointment__date">
+									<div class="appointment__form-item">
+										<input class="appointment__form-input" id="date" type="text" name="form[date]" data-error="Error" placeholder="Format: mm.dd" class="input">
+										<label class="appointment__form-label" for="#date">Date*</label>
+									</div>
+									<div class="appointment__form-item">
+										<input class="appointment__form-input" id="time" type="text" name="form[time]" data-error="Error" placeholder="Format: hh:mm" class="input">
+										<label class="appointment__form-label" for="#time">Time*</label>
+									</div>
+								</div>
+								<div class="appointment__form-item">
+									<input class="appointment__form-input" id="barber" type="text" name="form[barber]" data-error="Error" placeholder="Name" class="input">
+									<label class="appointment__form-label" for="#barber">Barber</label>
+								</div>
+								<div class="appointment__date">
+									<div class="appointment__form-item">
+										<input class="appointment__form-input" id="name" type="text" name="form[date]" data-error="Error" placeholder="Name" class="input">
+										<label class="appointment__form-label" for="#date">Your name</label>
+									</div>
+									<div class="appointment__form-item">
+										<input class="appointment__form-input" id="number" type="text" name="form[time]" data-error="Error" placeholder="Number" class="input">
+										<label class="appointment__form-label" for="number">Phone*</label>
+									</div>
+								</div>
+								<button type="submit" class="button btn">send</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer-body">
+					<a href="#" class="footer-body__logo-link">
+						<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo"></picture>
+					</a>
+					<div class="footer-body__social footer-social">
+						<a href="#" class="footer-social__link _icon-facebook"></a>
+						<a href="#" class="footer-social__link _icon-twitter"></a>
+						<a href="#" class="footer-social__link _icon-instagram"></a>
+					</div>
+
+				</div>
+			</div>
+			<div class="footer-body__copyright copyright">
+				<div class="copyright-text">Copyright © 2020 Privacy Policy</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230306171218"></script>
+</body>
+
+</html>
